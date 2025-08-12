@@ -1,0 +1,12 @@
+{
+  "name": "FaceFusion CPU",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "forwardPorts": [7860],
+  "portsAttributes": {
+    "7860": {
+      "label": "FaceFusion UI",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
